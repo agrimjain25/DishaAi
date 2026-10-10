@@ -1,0 +1,10 @@
+{
+  "name": "DISHA",
+  "description": "AI Case-Resolution Agent for Complex Public Services. From confusion to submission-ready.",
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

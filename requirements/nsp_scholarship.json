@@ -1,0 +1,65 @@
+{
+  "service_name": "National Scholarship Portal (NSP)",
+  "aliases": ["NSP", "National Scholarship", "Post Matric Scholarship", "Pre Matric Scholarship", "Scholarship"],
+  "source_type": "Verified library",
+  "source_url": "TO BE VERIFIED BY USER",
+  "section": "TO BE VERIFIED BY USER",
+  "last_verified": "TO BE VERIFIED BY USER",
+  "requirements": [
+    {
+      "id": "REQ-NSP-01",
+      "label": "Income certificate present",
+      "check_type": "document_present",
+      "field": "Income Certificate",
+      "expected": "Valid Income Certificate document present in case file",
+      "source_type": "Verified library",
+      "source_url": "TO BE VERIFIED BY USER",
+      "section": "TO BE VERIFIED BY USER",
+      "last_verified": "TO BE VERIFIED BY USER"
+    },
+    {
+      "id": "REQ-NSP-02",
+      "label": "Income certificate year matches application year",
+      "check_type": "year_match",
+      "field": "financial_year",
+      "expected": "Financial or academic session year on certificate aligns with application year",
+      "source_type": "Verified library",
+      "source_url": "TO BE VERIFIED BY USER",
+      "section": "TO BE VERIFIED BY USER",
+      "last_verified": "TO BE VERIFIED BY USER"
+    },
+    {
+      "id": "REQ-NSP-03",
+      "label": "Applicant name consistent across documents",
+      "check_type": "name_match",
+      "field": "person_name",
+      "expected": "Applicant name spelled consistently across all uploaded documents without discrepancy",
+      "source_type": "Verified library",
+      "source_url": "TO BE VERIFIED BY USER",
+      "section": "TO BE VERIFIED BY USER",
+      "last_verified": "TO BE VERIFIED BY USER"
+    },
+    {
+      "id": "REQ-NSP-04",
+      "label": "Category certificate present if category is claimed",
+      "check_type": "document_present",
+      "field": "Caste / Category Certificate",
+      "expected": "Category certificate present if reservation or category (SC/ST/OBC/EWS) is claimed",
+      "source_type": "Verified library",
+      "source_url": "TO BE VERIFIED BY USER",
+      "section": "TO BE VERIFIED BY USER",
+      "last_verified": "TO BE VERIFIED BY USER"
+    },
+    {
+      "id": "REQ-NSP-05",
+      "label": "Deadline not passed",
+      "check_type": "deadline",
+      "field": "deadline",
+      "expected": "Application or correction deadline has not passed relative to today",
+      "source_type": "Verified library",
+      "source_url": "TO BE VERIFIED BY USER",
+      "section": "TO BE VERIFIED BY USER",
+      "last_verified": "TO BE VERIFIED BY USER"
+    }
+  ]
+}

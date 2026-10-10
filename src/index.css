@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1e293b;
+  --color-brand-accent: #2563eb;
+  --color-brand-bg: #f8fafc;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-primary);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.step-active {
+  @apply text-brand-accent font-semibold;
+}
+
+.step-inactive {
+  @apply text-slate-400;
+}
